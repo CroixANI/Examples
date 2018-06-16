@@ -1,0 +1,12 @@
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Web.deps.json
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Web.runtimeconfig.json
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Web.runtimeconfig.dev.json
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Web.dll
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Web.pdb
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Common.dll
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/bin/Debug/netcoreapp2.0/Example.Common.pdb
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/obj/Debug/netcoreapp2.0/Example.Web.csproj.CoreCompileInputs.cache
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/obj/Debug/netcoreapp2.0/Example.Web.AssemblyInfoInputs.cache
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/obj/Debug/netcoreapp2.0/Example.Web.AssemblyInfo.cs
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/obj/Debug/netcoreapp2.0/Example.Web.dll
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Web/obj/Debug/netcoreapp2.0/Example.Web.pdb

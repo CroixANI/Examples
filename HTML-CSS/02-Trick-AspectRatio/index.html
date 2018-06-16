@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Aspect Ration Example/Trick</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam officia qui perferendis minima nobis in ipsum obcaecati veritatis! Neque porro, harum quod asperiores dolor molestias recusandae amet ipsam exercitationem.
+        Animi repellat dignissimos quas est? Consequuntur, eveniet iste? Vel nobis accusantium quaerat, quasi facilis dolor dolores ut inventore quo minus nemo veniam magnam repellat vero, ullam nisi modi quibusdam repudiandae?
+        Cupiditate, itaque fugiat. Doloremque sed hic veniam quae voluptatibus, dolore aperiam omnis temporibus eaque vitae dolores, enim molestiae fuga nisi fugit dolorum sunt quis similique doloribus ad? Consequatur, labore at?
+        Id quis mollitia sunt dolore ab harum itaque modi, recusandae, quidem voluptatem, esse quae commodi est sit? In necessitatibus iure quae voluptate consequatur! Nobis minima in repellendus nam, dolorum cumque.
+        Dolorum magnam incidunt labore perspiciatis excepturi soluta quibusdam architecto eligendi laudantium voluptatibus omnis, maxime quam sit nobis libero delectus alias laboriosam voluptate! Quisquam excepturi eaque quidem officia aperiam obcaecati labore?
+    </p>
+    <div class="relation">
+        <!-- 
+            Это распорка. Т.е. родительский контейнер не имеет установленной
+            высоты. И чтобы ему обеспечить высоту, то делаем так что у одно
+            вложенного дочернего элемента устанавливаем padding-top.
+
+            Если задовать padding-top в % процентах, то высчитываться он
+            будет от ширины родителя!!!
+
+            А так как у родителя т.е. у relation ширины в 100% и т.е.
+            ширина всей страницы, то padding-top таким образом будет
+            контролировать соотношение высоты от ширины для элемента
+            relation.
+
+            https://www.youtube.com/watch?v=MwD_tZGc7gA&t=4877s
+         -->
+        <div class="relation__ratio"></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus vero culpa velit maxime esse, aperiam officiis laborum eius sequi deleniti ipsam eveniet soluta totam quasi! Officia saepe eius voluptatem!
+        Explicabo porro sit deserunt, in natus accusamus rem earum quasi. Repellat cupiditate voluptas, unde similique est natus iusto asperiores voluptates eaque ea nisi inventore necessitatibus perferendis, beatae labore sequi cumque.
+        Impedit totam, dolorem quisquam recusandae repellat voluptatibus, blanditiis vero et nam suscipit explicabo eius laborum harum optio officia maxime corrupti est odio atque vel deserunt! Illo fuga dolorem veniam corrupti.
+        Nobis eveniet corrupti aspernatur totam eos laboriosam, odio aperiam necessitatibus quisquam quam minima est autem consequatur dignissimos assumenda, accusantium ad. Quidem deserunt, alias qui adipisci maiores ut ullam minus culpa.*5
+    </p>
+</body>
+</html>

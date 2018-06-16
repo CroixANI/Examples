@@ -1,0 +1,8 @@
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/bin/Debug/netstandard2.0/Example.Common.deps.json
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/bin/Debug/netstandard2.0/Example.Common.dll
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/bin/Debug/netstandard2.0/Example.Common.pdb
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/obj/Debug/netstandard2.0/Example.Common.csproj.CoreCompileInputs.cache
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/obj/Debug/netstandard2.0/Example.Common.AssemblyInfoInputs.cache
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/obj/Debug/netstandard2.0/Example.Common.AssemblyInfo.cs
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/obj/Debug/netstandard2.0/Example.Common.dll
+/Users/anichiporovich/Documents/Work/Projects/CreateLinkViewExample/Example.Common/obj/Debug/netstandard2.0/Example.Common.pdb
