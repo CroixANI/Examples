@@ -21,17 +21,13 @@ body {
 
 header {
     min-height: 100px;
-    background-color: blue;
 }
 
 main {
-    background-color: #e4e4e4;
     flex-grow: 1;
     overflow-y: auto;
 }
 
-
 footer {
     min-height: 100px;
-    background-color: gray;
 }

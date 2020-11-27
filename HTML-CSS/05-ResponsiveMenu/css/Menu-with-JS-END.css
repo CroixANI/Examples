@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Блочная модель */
+    margin: 0;
+    padding: 0;
+    
+    /* Типографика */
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+main {
+    padding-top: 80px; /*Отступ сверху чтобы заголовок не наезжал на контент*/
+}
+
+/*
+ из-за fixed мы должны играться с z-index.
+ так как это заголовок то он должен быть сверху любого контента 
+ и ставим большое значение
+*/
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50; 
+    padding: 0 1em 0 1em;
+
+    color: #ffffff;
+    height: 80px;  /*Это высота будет использовать для отступов в контентной части*/
+}
+
+/*
+ Заглушка которая нужна для адаптивного меню
+ На мелких экранах мы ей поставим z-index чтобы она закрывала часть меню, но придется и другим z-index поднять
+*/
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3F51B5;
+}
+
+.header__logo {
+    flex: 0 0 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+/* фикс для круглого лого, когда картинка подрезается */
+.header__logo img {
+    max-width: 100%;
+    display: block;
+}
+
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2; /* все из-за fixed? */
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__list li {
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    /*
+    Отключаем скрол контента когда открыто меню, но если нужно скролить само меню (см .header__menu)
+    */
+    body.lock-scroll {
+        overflow: hidden;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header::before {
+        z-index: 2;
+    }
+
+    .header__body {
+        height: 50px; /* меняем высоту и все плывет, теперь и отступы менять для контента */
+    }
+
+    .header__logo {
+        flex: 0 0 40px;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header__burger span,
+    .header__burger::before,
+    .header__burger::after {
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    
+    .header__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    /* Общие стили для верхней и нижней полоски бургера */
+    .header__burger::before,
+    .header__burger::after {
+        content: '';   
+    }
+
+    .header__burger::before {
+        top: 0;
+    }
+
+    .header__burger::after {
+        bottom: 0;
+    }
+
+    .header__burger span {
+        top: 9px;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: -100%; /*это для того чтобы меню появлялось сверху*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* в случае если на мобилу все меню не влезло (портретный режим)*/
+        background-color: #18b5a4;
+        padding: 100px 0 0 0; /* все из-за fixed, наше меню оказалось под header-ом и его теперь так же как и контент нужно сместить */
+    }
+
+    .header__menu.active {
+        top: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__list li {
+        font-size: 24px;
+        margin: 0 0 20px 0;
+    }
+}

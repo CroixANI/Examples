@@ -21,6 +21,7 @@ header {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 10%;
+    min-height: 100px;
 
     /* Оформление */
     background:red;
@@ -31,8 +32,4 @@ main {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-}
-
-.navigation {
-    min-height: 100px;
 }
