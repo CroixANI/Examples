@@ -1,0 +1,77 @@
+/* DIV 'button' styles */
+
+.header__burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: linear-gradient(
+        to bottom,
+        #000 20%,
+        transparent 21%,
+        transparent 40%,
+        #000 41%,
+        #000 60%,
+        transparent 61%,
+        transparent 80%,
+        #000 81%);
+}
+
+.header__burger.active {
+    background: linear-gradient(
+        45deg,
+        transparent 45%,
+        #000 46%,
+        #000 55%,
+        transparent 56%
+    ),
+    linear-gradient(
+        -45deg,
+        transparent 45%,
+        #000 46%,
+        #000 55%,
+        transparent 56%
+    );
+}
+
+/* Button styles */
+.header__button {
+    font-size: 0; /* to hide button text */
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: unset;
+    border: none;
+    background: linear-gradient(
+        to bottom,
+        #000 20%,
+        transparent 21%,
+        transparent 40%,
+        #000 41%,
+        #000 60%,
+        transparent 61%,
+        transparent 80%,
+        #000 81%);
+}
+
+.header__button.active {
+    background: linear-gradient(
+        45deg,
+        transparent 45%,
+        #000 46%,
+        #000 55%,
+        transparent 56%
+    ),
+    linear-gradient(
+        -45deg,
+        transparent 45%,
+        #000 46%,
+        #000 55%,
+        transparent 56%
+    );
+}
+
+.header__button:focus {
+    outline: unset;
+}

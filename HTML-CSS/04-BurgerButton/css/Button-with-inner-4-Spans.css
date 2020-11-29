@@ -1,0 +1,62 @@
+/* Burger Spans Styles */
+.burger_line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.burger_line_first {
+    top: 0;
+}
+
+/* two lines in one position here - it is for our animation that we wish to achieve */
+.burger_line_second,
+.burger_line_third {
+    top: 50%;
+    transform: translateY(-50%); /* hack to position line ideally to the height center */
+}
+
+.burger_line_fourth {
+    bottom: 0;
+}
+
+.active .burger_line_first,
+.active .burger_line_fourth {
+    opacity: 0;
+}
+
+.active .burger_line_second {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.active .burger_line_third {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* DIV 'button' styles */
+.header__burger {
+    display: block;
+    position: relative; /* required for our lines with position absolute */
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Button styles */
+.header__button {
+    font-size: 0; /* to hide button text */
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: unset;
+    border: none;
+}
+
+.header__button:focus {
+    outline: unset;
+}

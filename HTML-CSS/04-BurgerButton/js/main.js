@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     toggleButtons.forEach(element => {
         element.addEventListener("click", function() {
             element.classList.toggle(OPENED_MENU_CLASS);
+            // TODO - Change Button text but not inner HTML
         });
     });
     

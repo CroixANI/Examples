@@ -51,6 +51,7 @@
 
 /* Button styles */
 .header__button {
+    font-size: 0; /* to hide button text */
     display: block;
     position: relative;
     width: 30px;

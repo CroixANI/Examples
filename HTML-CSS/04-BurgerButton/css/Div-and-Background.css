@@ -1,0 +1,41 @@
+/* DIV 'button' styles */
+
+.header__burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../img/burger-open.svg) no-repeat center;
+    background-size: contain;
+    transition: all 0.3s ease 0s;
+}
+
+.header__burger.active {
+    background: url(../img/burger-close.svg) no-repeat center;
+    background-size: contain;
+    transition: all 0.3s ease 0s;
+}
+
+/* Button styles */
+.header__button {
+    font-size: 0; /* to hide button text */
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: unset;
+    border: none;
+    background: url(../img/burger-open.svg) no-repeat center;
+    background-size: contain;
+    transition: all 0.3s ease 0s;
+}
+
+.header__button.active {
+    background: url(../img/burger-close.svg) no-repeat center;
+    background-size: contain;
+    transition: all 0.3s ease 0s;
+}
+
+.header__button:focus {
+    outline: unset;
+}
