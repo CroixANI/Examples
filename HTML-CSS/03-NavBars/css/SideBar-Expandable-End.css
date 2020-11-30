@@ -92,15 +92,15 @@ main {
     margin-left: 1rem;
 }
 
+.header__link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
 .header__link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
-}
-
-.header__link svg {
-    min-width: 2rem;
-    margin: 0 1.5rem;
 }
 
 /* SVG Hover Styles */
@@ -146,7 +146,7 @@ main {
     .header__menu {
         bottom: 0;
         width: 100vw;
-        height: 4rem;
+        height: 5rem;
     }
 
     .logo {
@@ -156,6 +156,7 @@ main {
     .header__list {
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
     }
 
     .header__link {
@@ -189,8 +190,9 @@ main {
 }
 
 
+
 /* Theme Button */
-/* .dark {
+.dark {
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -226,4 +228,4 @@ main {
 
 .solar #solarIcon {
     display: block;
-} */
+}
